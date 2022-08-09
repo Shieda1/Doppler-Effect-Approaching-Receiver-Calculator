@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doppler Effect Approaching Receiver Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="newFrequencyofApproachingReceiverRadio" name="variables" checked>
+  <label for="newFrequencyofApproachingReceiverRadio">New Frequency of Approaching Receiver</label>
+
+  <input type="radio" id="sourceFrequencyRadio" name="variables">
+  <label for="sourceFrequencyRadio">Source Frequency</label>
+
+  <input type="radio" id="receiverVelocityRadio" name="variables">
+  <label for="receiverVelocityRadio">Receiver Velocity</label>
+
+  <input type="radio" id="waveVelocityRadio" name="variables">
+  <label for="waveVelocityRadio">Wave Velocity</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(f0) Source Frequency (Hz)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(ur) Receiver Velocity (m/s)</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(v) Wave Velocity (m/s)</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
